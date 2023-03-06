@@ -9,16 +9,31 @@ para o contrário.
 */
 var isTruthy
 function recebeTru(a){
-    if(a){return isTruthy = true} else{isTrusthy = false}
+    if(a){return isTruthy = true} else{return isTrusthy = false}
 }
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+recebeTru(null)
+recebeTru(undefined)
+recebeTru(0)
+recebeTru(false)
+recebeTru(NaN)
+recebeTru('')
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+recebeTru(1)
+recebeTru('oi')
+recebeTru(true)
+recebeTru(10)
+recebeTru(2.3)
+recebeTru('.')
+recebeTru('eu sou true')
+recebeTru(['oi'])
+recebeTru({})
+recebeTru(curso.javascript)
+
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
